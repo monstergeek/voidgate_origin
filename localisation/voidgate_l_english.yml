@@ -1,4 +1,8 @@
 ﻿l_english:
+###Modded Tannhäuser Gate, Ambient Object
+ void_bridge_object:0 "Void-Bridge Prototype"
+ void_bridge_object_desc:0 "A failed attempt to copy the voidgate, it has long been abandoned"
+ void_bridge_object_tooltip:0 "Inactive space gate."
 
  ke_jerryrigged_reactor:0 "§RJerry-Rigged Reactor§!"
  ke_jerryrigged_reactor_desc:0 "Bulky, barely functionning, require both space and manpower to sustain it's functions. But what can you expect from a held together by scraps 'fix' on an alien structure to provide power to various systems"
