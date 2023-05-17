@@ -1,0 +1,551 @@
+#########################
+#	kename hab blockers	#
+#########################
+
+@jerryrigged_to_repurposed = 360
+@repurposed_to_adequate = 480
+@adequate_to_perfected = 720
+@energy_cost = 1000
+@alloys_cost = 500
+
+# kename hab reactor
+
+ke_jerryrigged_reactor = {
+	time = @jerryrigged_to_repurposed
+
+	is_for_colonizable = yes
+	icon = "d_station_reactor"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_repurposed_reactor
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_jerryrigged_reactor_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_cold_fusion_power
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -4
+		planet_structures_energy_upkeep_mult = 1
+        planet_max_buildings_add = -1
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_repurposed_reactor = {
+	time = @repurposed_to_adequate
+
+	is_for_colonizable = yes
+	icon = "d_station_reactor"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_adequate_reactor
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_repurposed_reactor_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_antimatter_power
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+		planet_structures_energy_upkeep_mult = 0.5
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_adequate_reactor = {
+	time = @adequate_to_perfected
+
+	is_for_colonizable = yes
+	icon = "d_station_reactor"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_perfected_reactor
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_adequate_reactor_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_zero_point_power
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_technician_energy_produces_add = 1
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_perfected_reactor = {
+
+	is_for_colonizable = yes
+	icon = "d_station_reactor"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = +1
+		planet_structures_energy_upkeep_mult = -0.2
+		planet_technician_energy_produces_add = 2
+	}
+}
+
+# kename diurnal regulator
+
+ke_jerryrigged_diurnal_regulator = {
+	time = @jerryrigged_to_repurposed
+
+	is_for_colonizable = yes
+	icon = "d_satellite_in_orbit"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_repurposed_diurnal_regulator
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_jerryrigged_diurnal_regulator_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_thrusters_2
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -2
+		habitability_ceil_add = -0.20
+        planet_max_buildings_add = -1
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_repurposed_diurnal_regulator = {
+	time = @repurposed_to_adequate
+
+	is_for_colonizable = yes
+	icon = "d_satellite_in_orbit"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_adequate_diurnal_regulator
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_repurposed_diurnal_regulator_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_thrusters_3
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+		habitability_ceil_add = -0.10
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_adequate_diurnal_regulator = {
+	time = @adequate_to_perfected
+
+	is_for_colonizable = yes
+	icon = "d_satellite_in_orbit"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_perfected_diurnal_regulator
+	}
+
+	planet_modifier = {
+        planet_amenities_add = 7
+	}
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_adequate_diurnal_regulator_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_thrusters_4
+			}
+		}
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_perfected_diurnal_regulator = {
+
+	is_for_colonizable = yes
+	icon = "d_satellite_in_orbit"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_perfected_diurnal_regulator_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_thrusters_3
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = +1
+        planet_amenities_add = 14
+	}
+}
+
+# kename vacuum field
+
+ke_jerryrigged_vacuum_fields = {
+	time = @jerryrigged_to_repurposed
+
+	is_for_colonizable = yes
+	icon = "d_station_cargo"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_jerryrigged_vacuum_fields_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_shields_2
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -2
+		habitability_ceil_add = -0.20
+        planet_max_buildings_add = -1
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_repurposed_vacuum_fields
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_repurposed_vacuum_fields = {
+	time = @repurposed_to_adequate
+
+	is_for_colonizable = yes
+	icon = "d_station_cargo"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_repurposed_vacuum_fields_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_shields_3
+			}
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+		habitability_ceil_add = -0.10
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_adequate_vacuum_fields
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_adequate_vacuum_fields = {
+	time = @adequate_to_perfected
+
+	is_for_colonizable = yes
+	icon = "d_station_cargo"
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_adequate_vacuum_fields_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_shields_4
+			}
+		}
+	}
+
+	planet_modifier = {
+        planet_housing_add = 4
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_perfected_vacuum_fields
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_perfected_vacuum_fields = {
+	is_for_colonizable = yes
+	icon = "d_station_cargo"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = +1
+        planet_housing_add = 8
+	}
+}
+
+# kename ring gyros
+
+ke_jerryrigged_ring_gyros = {
+	time = @jerryrigged_to_repurposed
+	icon = "d_ruined_system"
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_jerryrigged_ring_gyros_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_starbase_3
+			}
+		}
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_repurposed_ring_gyros
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -2
+		habitability_ceil_add = -0.20
+        planet_max_buildings_add = -1
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_repurposed_ring_gyros = {
+	time = @repurposed_to_adequate
+	icon = "d_ruined_system"
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_repurposed_ring_gyros_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_starbase_4
+			}
+		}
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_adequate_ring_gyros
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+		habitability_ceil_add = -0.10
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_adequate_ring_gyros = {
+	time = @adequate_to_perfected
+	icon = "d_ruined_system"
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+
+	can_be_cleared = {
+		custom_tooltip = {
+			text = ke_adequate_ring_gyros_tooltip
+			exists = owner
+			owner = {
+				has_technology = tech_starbase_5
+			}
+		}
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		ke_perfected_ring_gyros
+	}
+
+	planet_modifier = {
+        planet_max_buildings_add = +2
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = @energy_cost
+			alloys = @alloys_cost
+		}
+	}
+}
+
+ke_perfected_ring_gyros = {
+	icon = "d_ruined_system"
+
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = +1
+        planet_max_buildings_add = +4
+	}
+}
