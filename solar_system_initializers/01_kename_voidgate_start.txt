@@ -18,6 +18,26 @@ asteroid_belt = {
 	}
 	asteroid_belt = {
 		type = icy_asteroid_belt
+		radius = 295
+	}
+		asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 296
+	}
+		asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 297
+	}
+		asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 298
+	}
+		asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 299
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
 		radius = 300
 	}
 	asteroid_belt = {
