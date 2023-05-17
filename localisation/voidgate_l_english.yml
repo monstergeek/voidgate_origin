@@ -1,0 +1,61 @@
+﻿l_english:
+
+ ke_jerryrigged_reactor:0 "§RJerry-Rigged Reactor§!"
+ ke_jerryrigged_reactor_desc:0 "Bulky, barely functionning, require both space and manpower to sustain it's functions. But what can you expect from a held together by scraps 'fix' on an alien structure to provide power to various systems"
+ ke_jerryrigged_reactor_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_cold_fusion_power$§!"
+
+ ke_repurposed_reactor:0 "§HRepurposed Reactor§!"
+ ke_repurposed_reactor_desc:0 "Now that we've gotten more used to it, we have succeeded in reactivating it's function, most of them at least, and reduce the bulk and maintenance requirement to a certain degree."
+ ke_repurposed_reactor_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_antimatter_power$§!"
+
+ ke_adequate_reactor:0 "Adequate Reactor"
+ ke_adequate_reactor_desc:0 "With the addition of our own tech, this reactor can provide for and sustain the whole station, and some more."
+ ke_adequate_reactor_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_zero_point_power$§!"
+
+ ke_perfected_reactor:0 "§EPerfected Reactor§!"
+ ke_perfected_reactor_desc:0 "We've succeeded in reactivating former lost section of this machine, and with terrific efficiency it started recycling power losses and outputing amount as close as can be to perfect efficiency."
+
+ ke_jerryrigged_diurnal_regulator:0 "§RJerry-Rigged Diurnal Regulator§!"
+ ke_jerryrigged_diurnal_regulator_desc:0 ""
+ ke_jerryrigged_diurnal_regulator_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_thrusters_2$§!"
+
+ ke_repurposed_diurnal_regulator:0 "§HRepurposed Diurnal Regulator§!"
+ ke_repurposed_diurnal_regulator_desc:0 ""
+ ke_repurposed_diurnal_regulator_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_thrusters_3$§!"
+
+ ke_adequate_diurnal_regulator:0 "Adequate Diurnal Regulator"
+ ke_adequate_diurnal_regulator_desc:0 ""
+ ke_adequate_diurnal_regulator_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_thrusters_4$§!"
+
+ ke_perfected_diurnal_regulator:0 "§EPerfected Diurnal Regulator§!"
+ ke_perfected_diurnal_regulator_desc:0 ""
+
+ ke_jerryrigged_vacuum_fields:0 "§RJerry-Rigged Vacuum Fields§!"
+ ke_jerryrigged_vacuum_fields_desc:0 ""
+ ke_jerryrigged_vacuum_fields_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_shields_2$§!"
+
+ ke_repurposed_vacuum_fields:0 "§HRepurposed Vacuum Fields§!"
+ ke_repurposed_vacuum_fields_desc:0 ""
+ ke_jerryrigged_vacuum_fields_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_shields_3$§!"
+
+ ke_adequate_vacuum_fields:0 "Adequate Vacuum Fields"
+ ke_adequate_vacuum_fields_desc:0 ""
+ ke_jerryrigged_vacuum_fields_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_shields_4$§!"
+
+ ke_perfected_vacuum_fields:0 "§EPerfected Vacuum Fields§!"
+ ke_perfected_vacuum_fields_desc:0 ""
+
+ ke_jerryrigged_ring_gyros:0 "§RJerry-Rigged Ring Gyros§!"
+ ke_jerryrigged_ring_gyros_desc:0 ""
+ ke_jerryrigged_ring_gyros_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_starbase_3$§!"
+
+ ke_repurposed_ring_gyros:0 "§HRepurposed Ring Gyros§!"
+ ke_repurposed_ring_gyros_desc:0 ""
+ ke_repurposed_ring_gyros_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_starbase_4$§!"
+
+ ke_adequate_ring_gyros:0 "Adequate Ring Gyros"
+ ke_adequate_ring_gyros_desc:0 ""
+ ke_adequate_ring_gyros_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_starbase_5$§!"
+
+ ke_perfected_ring_gyros:0 "§EPerfected Ring Gyros§!"
+ ke_perfected_ring_gyros_desc:0 ""
