@@ -49,10 +49,7 @@ voidgate_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = 1
 		size = 30
-		has_ring = no
-
-        
-        
+		has_ring = no    
 	}
 
 	planet = {
