@@ -63,3 +63,12 @@
 
  ke_perfected_ring_gyros:0 "§EPerfected Ring Gyros§!"
  ke_perfected_ring_gyros_desc:0 ""
+
+ voidgate_system_initializer_NAME:0 "Sol - VoidGate Initiative"
+ voidgate_system_initializer_DESC:0 "This system is home the the VoidGate initiative led by humanity"
+
+ kename_home_system_NAME:0 "Destiny - VoidGate initiative"
+ kename_home_system_DESC:0 "This is one of the system in which one of the human expedition through the VoidGate ended. The ship was forsaken in favor of ground operation, which proved to be a poor choice"
+
+ monster_home_system_NAME:0 "The Talkers - VoidGate initiative"
+ monster_home_system_DESC:0 "In this system, a ship from the VoidGate initiative was sent, an unusual one, since sign of potential civilisation were detected. They later learnt that, despite all sign pointing to an active civilization, all there was was ruins and wrecks, usable, but not what was planned"
