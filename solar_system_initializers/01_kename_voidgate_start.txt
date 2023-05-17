@@ -109,7 +109,7 @@ asteroid_belt = {
 			orbit_distance = 5
 		}
 	}
-	
+	#
 	#gateway
 	#init_effect = {
 	#	spawn_megastructure = {
@@ -119,7 +119,7 @@ asteroid_belt = {
 	#		orbit_angle = 180
 	#		}
 	#}
-	
+	#
 	change_orbit = 50
 
 
