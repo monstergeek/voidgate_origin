@@ -1,3 +1,7 @@
+#######################################
+# Kename Starting System w/crappy hab #
+#######################################
+
 @base_moon_distance = 10
 
 kename_broken_start = {
