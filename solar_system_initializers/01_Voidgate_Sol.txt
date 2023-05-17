@@ -112,7 +112,7 @@ voidgate_system_initializer = {
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
 
-			init_effect{
+			init_effect = {
             create_ambient_object = {
 				type = "void_bridge_object"
 				entity_offset = { min = 5 max = 10}
@@ -333,279 +333,29 @@ voidgate_system_initializer = {
 		has_ring = no
 	}
 
+
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 1 }
-		initializer = "Horror1_system_initializer"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 1 }
-		initializer = "Horror2_system_initializer"
+	distance = { min = 2 max = 2 }
+	initializer = "guardians_init_horror"
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 1 }
-		initializer = "Horror3_system_initializer"
+		distance = { min = 2 max = 3 }
+		initializer = "guardians_init_horror"
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 1 }
-		initializer = "Horror4_system_initializer"
+		distance = { min = 2 max = 3 }
+		initializer = "guardians_init_horror"
 	}
-}
-
-Horror1_system_initializer = {
-
-	name =	"Dread"
-
-	class = "sc_g"
-
-	planet = {
-		class = "pc_g_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-
-		init_effect = {
-			create_country = {
-				name = "The Dread"
-				type = guardian_dreadnought
-				flag = {
-					icon = {
-						category = "spherical"
-						file = "flag_spherical_6.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "00_solid.dds"
-					}
-					colors={
-						"red"
-						"red"
-						"null"
-						"null"
-					}
-				}
-			create_fleet = {
-				name = "Dread host"
-				effect = {
-					set_owner = event_target:cybrex
-					create_ship = {
-						name = "Horror"
-						design = "NAME_Dimensional_Horror"
-						graphical_culture = "ai_01"
-					}
-
-				}
-			}
-		}
+	neighbor_system = {
+		distance = { min = 1 max = 2 }
+		initializer = "guardians_init_horror"
 	}
+	neighbor_system = {
+		distance = { min = 1 max = 2 }
+		initializer = "guardians_init_horror"
 	}
-
-
-	planet = {
-        count = { min = 3 max = 6 }
-        orbit_distance = 20
-        orbit_angle = { min = 90 max = 270 }
-
-        change_orbit = 10
-
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
-        }
-    }	
-}
-
-Horror2_system_initializer = {
-
-	name =	"Doom"
-
-	class = "sc_g"
-
-	planet = {
-		class = Star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-
-		init_effect = {
-			create_country = {
-				name = "The Doom"
-				type = guardian_dreadnought
-				flag = {
-					icon = {
-						category = "spherical"
-						file = "flag_spherical_6.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "00_solid.dds"
-					}
-					colors={
-						"red"
-						"red"
-						"null"
-						"null"
-					}
-				}
-			create_fleet = {
-				name = "Doom host"
-				effect = {
-					set_owner = event_target:cybrex
-					create_ship = {
-						name = "Horror"
-						design = "NAME_Dimensional_Horror"
-						graphical_culture = "ai_01"
-					}
-
-				}
-			}
-		}
+	neighbor_system = {
+		distance = { min = 1 max = 2 }
+		initializer = "guardians_init_horror"
 	}
-
-
-	planet = {
-        count = { min = 3 max = 8 }
-        orbit_distance = 20
-        orbit_angle = { min = 90 max = 270 }
-
-        change_orbit = 10
-
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
-        }
-    }	
-}
-
-Horror3_system_initializer = {
-
-	name =	"Fear"
-
-	class = "sc_g"
-
-	planet = {
-		class = Star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-
-		init_effect = {
-			create_country = {
-				name = "The Fear"
-				type = guardian_dreadnought
-				flag = {
-					icon = {
-						category = "spherical"
-						file = "flag_spherical_6.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "00_solid.dds"
-					}
-					colors={
-						"red"
-						"red"
-						"null"
-						"null"
-					}
-				}
-			create_fleet = {
-				name = "Fear host"
-				effect = {
-					set_owner = event_target:cybrex
-					create_ship = {
-						name = "Horror"
-						design = "NAME_Dimensional_Horror"
-						graphical_culture = "ai_01"
-					}
-
-				}
-			}
-		}
-	}
-	}
-
-
-	planet = {
-        count = { min = 3 max = 6 }
-        orbit_distance = 20
-        orbit_angle = { min = 90 max = 270 }
-
-        change_orbit = 10
-
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
-        }
-    }	
-}
-
-Horror4_system_initializer = {
-
-	name =	"Panic"
-
-	class = "sc_g"
-
-	planet = {
-		class = Star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-
-		init_effect = {
-			create_country = {
-				name = "The Panic"
-				type = guardian_dreadnought
-				flag = {
-					icon = {
-						category = "spherical"
-						file = "flag_spherical_6.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "00_solid.dds"
-					}
-					colors={
-						"red"
-						"red"
-						"null"
-						"null"
-					}
-				}
-			create_fleet = {
-				name = "Panic host"
-				effect = {
-					set_owner = event_target:cybrex
-					create_ship = {
-						name = "Horror"
-						design = "NAME_Dimensional_Horror"
-						graphical_culture = "ai_01"
-					}
-
-				}
-			}
-		}
-	}
-	}
-
-
-	planet = {
-        count = { min = 3 max = 6 }
-        orbit_distance = 20
-        orbit_angle = { min = 90 max = 270 }
-
-        change_orbit = 10
-
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
-        }
-    }	
 }
