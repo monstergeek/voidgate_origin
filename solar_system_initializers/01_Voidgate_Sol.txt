@@ -1,3 +1,8 @@
+######################################
+# Sol VoidGate Programme Home System #
+######################################
+
+
 @distance = 50
 @base_moon_distance = 10
 @jumps = 3
