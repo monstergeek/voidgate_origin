@@ -116,9 +116,11 @@ voidgate_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { ignore_startup_effect }
 
 			init_effect{
 				create_ambient_object = {
+					set_deposit = d_physics_3
 					type = "tannhauser_gate_object"
 					name = "Void-Bridge prototype"
 					entity_offset = { min = 0 max = 20}

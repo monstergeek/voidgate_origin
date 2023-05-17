@@ -1,0 +1,9 @@
+###Alternative Tannhäuser gate with different Text
+ambient_object = {
+	name = "void_bridge_object"
+	entity = "tannhauser_gate_01_locator_entity"
+	selectable = yes
+	show_name = yes
+	tooltip = "void_bridge_object_tooltip"
+	description = "void_bridge_object_desc"
+}
