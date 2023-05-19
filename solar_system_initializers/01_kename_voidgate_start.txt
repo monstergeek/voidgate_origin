@@ -8,9 +8,17 @@
 kename_home_system = {
 	class = "rl_starting_stars"
 	
-asteroid_belt = {
+	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 50
+	}
+	planet = {
+		class = pc_broken
+		orbit_distance = 50
+		orbit_angle = 75
+		size = 20
+		has_ring = no
+
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
