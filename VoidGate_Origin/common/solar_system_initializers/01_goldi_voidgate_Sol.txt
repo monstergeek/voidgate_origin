@@ -109,11 +109,13 @@ voidgate_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
+			flags = { ignore_startup_effect }
 
 			init_effect = {
+				set_deposit = d_physics_3
             create_ambient_object = {
 				type = "void_bridge_object"
-				entity_offset = { min = 5 max = 10}
+				entity_offset = { min = 0 max = 5}
 				entity_offset_height = { min = -0 max = -20 }
 				location = this
 			}
@@ -244,6 +246,10 @@ voidgate_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 180
 			has_ring = no
+			flags = { ignore_startup_effect }
+            init_effect = {
+                set_deposit = d_physics_5
+            }
 		}
 	}
 
@@ -275,7 +281,7 @@ voidgate_system_initializer = {
 
 		flags = { ignore_startup_effect }
         init_effect = {
-            set_deposit = d_vast_unity_deposit
+            set_deposit = d_physics_5
 		}
         moon = {
             name = "NAME_Triton"
