@@ -240,7 +240,7 @@ voidgate_system_initializer = {
 			has_ring = no
 		}
         moon = {
-			name = "NAME_Spectre"
+			name = "Spectre"
 			class = "pc_molten"
 			size = 5
 			orbit_distance = 12
