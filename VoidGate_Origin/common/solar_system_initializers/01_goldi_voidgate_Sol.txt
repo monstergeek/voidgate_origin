@@ -112,13 +112,14 @@ voidgate_system_initializer = {
 			flags = { ignore_startup_effect }
 
 			init_effect = {
-				set_deposit = d_physics_3
+				
             create_ambient_object = {
 				type = "void_bridge_object"
 				entity_offset = { min = 0 max = 5}
-				entity_offset_height = { min = -0 max = -20 }
+				entity_offset_height = { min = 0 max = -20 }
 				location = this
 			}
+			set_deposit = d_physics_3
         }
 		}
 	}
@@ -238,18 +239,22 @@ voidgate_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { ignore_startup_effect }
+            		init_effect = {
+                		add_deposit = d_physics_2
+            		}
 		}
-        moon = {
-			name = "NAME_Spectre"
+        	moon = {
+			name = "Spectre"
 			class = "pc_molten"
 			size = 5
 			orbit_distance = 12
 			orbit_angle = 180
 			has_ring = no
 			flags = { ignore_startup_effect }
-            init_effect = {
-                set_deposit = d_physics_5
-            }
+            		init_effect = {
+                		add_deposit = d_physics_2
+            		}
 		}
 	}
 
@@ -299,7 +304,7 @@ voidgate_system_initializer = {
     }
 
 	planet = {
-		name = "NAME_134340_Pluto"
+		name = "Pluto"
 		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
@@ -336,108 +341,90 @@ voidgate_system_initializer = {
 
 
 	neighbor_system = {
-	distance = { min = 2 max = 2 }
-	initializer = "guardians_init_horror"
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 2 max = 3 }
-		initializer = "guardians_init_horror"
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 2 max = 3 }
-		initializer = "guardians_init_horror"
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 1 max = 2 }
-		initializer = "guardians_init_horror"
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 1 max = 2 }
-		initializer = "guardians_init_horror"
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 1 max = 2 }
-		initializer = "guardians_init_horror"
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
+	neighbor_system = {
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
+	}
+	neighbor_system = {
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
+	}
+	neighbor_system = {
+	hyperlane_jumps = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
+	}	
 }
 
 hostile_init_Horror = {
-	class = "rl_standard_stars"
-
-	max_instances = 5
+	class = sc_black_hole
+	name = "Sensor Anomaly"
 
 	usage = misc_system_init
-	
-	flags = { hostile_system}
+	usage_odds = {
+		base = 0
+	}
 
 	planet = {
-		count = 1
 		class = star
 		orbit_distance = 0
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-	}
+		size = 40
 
-	change_orbit = 45
-
-	planet = {
-		class = pc_gas_giant
-		orbit_distance = 40
-		orbit_angle = { min = 160 max = 330 }
 		init_effect = {
-			set_deposit = d_exotic_gases_1
-		}
-	}
-
-	planet = {
-		count = { min = 2 max = 8 }
-		orbit_distance = { min = 20 max = 35 }
-		orbit_angle = { min = 90 max = 270 }
-
-		change_orbit = 10
-
-		moon = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 2
+			prevent_anomaly = yes
+			clear_deposits = yes
+			save_event_target_as = center
+			set_deposit = d_dark_matter_deposit_2
+			create_ambient_object = {
+				type = "space_storm_1"
+				location = this
+			}
 		}
 	}
 
 	init_effect = {
-		create_amoeba_country = yes
-		random_system_planet = {
-			limit = { is_star = no }
-			event_target:amoeba_country = {
-				create_fleet = {
-					name = "NAME_Space_Amoeba_plural"
-					settings = {
-						garrison = yes
-					}
-					effect = {
-						set_owner = event_target:amoeba_country
-						while = {
-							count = 4
-							create_ship = {
-								name = ""
-								design = "NAME_Large_Space_Organism_Teal"
-							}
-						}
-						while = {
-							count = 5
-							create_ship = {
-								name = ""
-								design = "NAME_Large_Space_Organism_Zebra"
-							}
-						}
-						set_formation_scale = 3.0
-						set_location = PREVPREV
-						set_fleet_stance = aggressive
-						set_aggro_range_measure_from = self
-						set_aggro_range = 100
-					}
+		create_cloud_country = yes
+		event_target:cloud_country = {
+			create_fleet = {
+				name = "Violence"
+				settings = {
+					spawn_debris = yes
+					is_boss = yes
 				}
-			}
+				effect = {
+					set_owner = event_target:cloud_country
+					create_ship = {
+						name = "NAME_Subspace_Rupture_Cloud_1"
+						design = "NAME_Dimensional_Horror"
+					}
+					set_location = event_target:center
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 500
+
+
 		}
 	}
 }
