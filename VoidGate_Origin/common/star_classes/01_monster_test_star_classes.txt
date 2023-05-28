@@ -1,0 +1,102 @@
+# random Quatuor
+sc_quatuor_1 = { # Quatuor system
+	class			 = g_star
+	icon				= a_trinary_star
+	planet			= {
+						key = pc_g_star
+						class = g_star
+					}
+	planet			= {
+						key = pc_m_star
+						class = m_star
+					}
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	planet			= {
+						key = pc_t_star
+						class = t_star
+					}
+	spawn_odds		 = 20
+	num_planets	 = { min = 4 max = 10 }
+}
+
+sc_quatuor_2 = { # Quatuor system
+	class			 = b_star
+	icon				= a_trinary_star
+	planet			= {
+						key = pc_b_star
+						class = b_star
+					}
+	planet			= {
+						key = pc_a_star
+						class = a_star
+					}
+	planet			= {
+						key = pc_f_star
+						class = f_star
+					}
+	planet			= {
+						key = pc_t_star
+						class = t_star
+					}
+	spawn_odds		 = 20
+	num_planets	 = { min = 4 max = 10 }
+}
+
+sc_quatuor_3 = { # Quatuor system
+	class			 = k_star
+	icon				= a_trinary_star
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	planet			= {
+						key = pc_f_star
+						class = f_star
+					}
+	planet			= {
+						key = pc_g_star
+						class = g_star
+					}
+	planet			= {
+						key = pc_t_star
+						class = t_star
+					}
+	spawn_odds		 = 20
+	num_planets	 = { min = 4 max = 10 }
+}
+
+sc_quatuor_4 = { # Quatuor system
+	class			 = b_star
+	icon				= a_trinary_star
+	planet			= {
+						key = pc_b_star
+						class = b_star
+					}
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	planet			= {
+						key = pc_k_star
+						class = k_star
+					}
+	planet			= {
+						key = pc_t_star
+						class = t_star
+					}
+	spawn_odds		 = 20
+	num_planets	 = { min = 4 max = 10 }
+}
+
+random_list = {
+	name = "rl_quatuor_stars"
+	stars = {
+		"sc_quatuor_1"
+		"sc_quatuor_2"
+		"sc_quatuor_3"
+		"sc_quatuor_4"
+	}
+}
