@@ -337,107 +337,97 @@ voidgate_system_initializer = {
 
 	neighbor_system = {
 	distance = { min = 2 max = 2 }
-	initializer = "guardians_init_horror"
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 2 max = 3 }
-		initializer = "guardians_init_horror"
+	distance = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 2 max = 3 }
-		initializer = "guardians_init_horror"
+	distance = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-		distance = { min = 1 max = 2 }
-		initializer = "guardians_init_horror"
+	distance = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
-	neighbor_system = {
-		distance = { min = 1 max = 2 }
-		initializer = "guardians_init_horror"
+	spawn_system = {
+	distance = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
-	neighbor_system = {
-		distance = { min = 1 max = 2 }
-		initializer = "guardians_init_horror"
+	spawn_system = {
+	distance = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
 	}
+	spawn_system = {
+	distance = { min = 2 max = 2 }
+	initializer = "hostile_init_Horror"
+	}
+	
 }
 
 hostile_init_Horror = {
-	class = "rl_standard_stars"
-
-	max_instances = 5
+	class = sc_black_hole
+	name = "Do not Approach!"
 
 	usage = misc_system_init
-	
-	flags = { hostile_system}
-
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
-	}
-
-	change_orbit = 45
-
-	planet = {
-		class = pc_gas_giant
-		orbit_distance = 40
-		orbit_angle = { min = 160 max = 330 }
-		init_effect = {
-			set_deposit = d_exotic_gases_1
+	usage_odds = {
+		base = 90000
+		modifier = {
+			factor = 0
+			has_star_flag = empire_cluster
+		}
+		modifier = {
+			factor = 0
+			is_bottleneck_system = yes
 		}
 	}
 
 	planet = {
-		count = { min = 2 max = 8 }
-		orbit_distance = { min = 20 max = 35 }
-		orbit_angle = { min = 90 max = 270 }
+		class = star
+		orbit_distance = 0
+		size = 40
 
-		change_orbit = 10
-
-		moon = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 2
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			save_event_target_as = center
+			set_deposit = d_dark_matter_deposit_2
+			create_ambient_object = {
+				type = "space_storm_1"
+				location = this
+			}
 		}
 	}
 
 	init_effect = {
-		create_amoeba_country = yes
-		random_system_planet = {
-			limit = { is_star = no }
-			event_target:amoeba_country = {
-				create_fleet = {
-					name = "NAME_Space_Amoeba_plural"
-					settings = {
-						garrison = yes
-					}
-					effect = {
-						set_owner = event_target:amoeba_country
-						while = {
-							count = 4
-							create_ship = {
-								name = ""
-								design = "NAME_Large_Space_Organism_Teal"
-							}
-						}
-						while = {
-							count = 5
-							create_ship = {
-								name = ""
-								design = "NAME_Large_Space_Organism_Zebra"
-							}
-						}
-						set_formation_scale = 3.0
-						set_location = PREVPREV
-						set_fleet_stance = aggressive
-						set_aggro_range_measure_from = self
-						set_aggro_range = 100
+		create_cloud_country = yes
+		event_target:cloud_country = {
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = cloud_power
 					}
 				}
+				add_modifier = {
+					modifier = cloud_power
+					days = -1
+				}
 			}
+			create_fleet = {
+				name = "Violence"
+				effect = {
+					set_owner = event_target:cloud_country
+					create_ship = {
+						name = "NAME_Subspace_Rupture_Cloud_1"
+						design = "NAME_Dimensional_Horror"
+					}
+					set_location = event_target:center
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 500
+
+
 		}
 	}
 }
