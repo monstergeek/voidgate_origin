@@ -14,21 +14,21 @@ create_horror_country = {
 					category = "backgrounds"
 					file = "00_solid.dds"
 				}
-				    colors={
-					    "black"
-					    "black"
-					    "null"
-					    "null"
-				    }
+					colors={
+						"black"
+						"black"
+						"null"
+						"null"
+					}
 			    }
 				effect = {
-                save_global_event_target_as = horror_country
-				add_modifier = {
-                    modifier = cloud_power
-                    days = -1
+            		save_global_event_target_as = horror_country
+					add_modifier = {
+                		modifier = cloud_power
+                		days = -1
+                	}
                 }
-                }
-			}
 			}
 		}
+	}
 }
