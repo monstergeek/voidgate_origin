@@ -336,33 +336,54 @@ voidgate_system_initializer = {
 
 
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
-	spawn_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+	neighbor_system = {
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
-	spawn_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+	neighbor_system = {
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
-	spawn_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+	neighbor_system = {
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
+	}
+	
 	
 }
 
@@ -387,7 +408,7 @@ hostile_init_Horror = {
 			}
 		}
 	}
-
+	flags = { horror_system }
 	init_effect = {
 		create_horror_country = yes
 			create_fleet = {
