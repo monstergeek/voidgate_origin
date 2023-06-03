@@ -64,6 +64,8 @@
  ke_perfected_ring_gyros:0 "§EPerfected Ring Gyros§!"
  ke_perfected_ring_gyros_desc:0 ""
 
+ # name and desc for the sys (unlocked for now, to lock to origin at some point)
+ 
  voidgate_system_initializer_NAME:0 "Sol - VoidGate Initiative"
  voidgate_system_initializer_DESC:0 "This system is home the the VoidGate initiative led by humanity"
 

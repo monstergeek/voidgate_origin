@@ -112,13 +112,14 @@ voidgate_system_initializer = {
 			flags = { ignore_startup_effect }
 
 			init_effect = {
-				set_deposit = d_physics_3
+				
             create_ambient_object = {
 				type = "void_bridge_object"
 				entity_offset = { min = 0 max = 5}
-				entity_offset_height = { min = -0 max = -20 }
+				entity_offset_height = { min = 0 max = -20 }
 				location = this
 			}
+			set_deposit = d_physics_3
         }
 		}
 	}
@@ -238,8 +239,14 @@ voidgate_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { ignore_startup_effect }
+            		init_effect = {
+                		add_deposit = d_physics_2
+            		}
 		}
+
         moon = {
+
 			name = "Spectre"
 			class = "pc_molten"
 			size = 5
@@ -247,9 +254,9 @@ voidgate_system_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			flags = { ignore_startup_effect }
-            init_effect = {
-                set_deposit = d_physics_5
-            }
+            		init_effect = {
+                		add_deposit = d_physics_2
+            		}
 		}
 	}
 
@@ -389,9 +396,11 @@ voidgate_system_initializer = {
 
 hostile_init_Horror = {
 	class = sc_black_hole
-	name = "Do not Approach!"
-
+	name = "Sensor Anomaly"
 	usage = misc_system_init
+	usage_odds = {
+		base = 0
+	}
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -410,6 +419,7 @@ hostile_init_Horror = {
 	}
 	flags = { horror_system }
 	init_effect = {
+
 		create_horror_country = yes
 			create_fleet = {
 				name = "Violence"
