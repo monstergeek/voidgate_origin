@@ -1,0 +1,34 @@
+### Void Horror ###
+create_horror_country = {
+	optimize_memory
+	if = {limit = { NOT = { exists = event_target:horror_country } }
+		create_country = {
+			name = "The Foul Beyond"
+			type = void_horror
+			flag = {
+				icon = {
+					category = "zoological"
+					file = "flag_zoological_1.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+					colors={
+						"black"
+						"black"
+						"null"
+						"null"
+					}
+			    }
+				effect = {
+            		save_global_event_target_as = horror_country
+					add_modifier = {
+                		modifier = cloud_power
+                		days = -1
+                	}
+                }
+			}
+		}
+	}
+}

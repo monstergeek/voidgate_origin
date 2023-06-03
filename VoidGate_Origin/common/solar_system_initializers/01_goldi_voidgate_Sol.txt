@@ -41,7 +41,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Sol"
+		name = "Home"
 		class = "pc_g_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -50,7 +50,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Mercury"
+		name = "Quick-Silver"
 		class = "pc_molten"
 		orbit_distance = 40
 		orbit_angle = 15
@@ -67,7 +67,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Venus"
+		name = "Vengar"
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
@@ -125,7 +125,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Mars"
+		name = "Barror"
 		class = "pc_barren"
 		orbit_distance = 25
 		orbit_angle = 60
@@ -143,7 +143,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_1_Ceres"
+		name = "Corus"
 		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
@@ -152,7 +152,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_2_Pallas"
+		name = "Plintus"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = -95
@@ -161,7 +161,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_3_Juno"
+		name = "Jano"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = 285
@@ -170,7 +170,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_4_Vesta"
+		name = "Vecna"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
@@ -179,7 +179,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Jupiter"
+		name = "Ori'Ra"
 		class = "pc_gas_giant"
 		orbit_distance = 40
 		orbit_angle = -160
@@ -189,7 +189,7 @@ voidgate_system_initializer = {
 		change_orbit = 6
 
 		moon = {
-			name = "NAME_Io"
+			name = "Ra'io"
 			class = "pc_molten"
 			size = 6
 			orbit_distance = 10
@@ -197,7 +197,7 @@ voidgate_system_initializer = {
 			has_ring = no
 		}
 		moon = {
-			name = "NAME_Europa"
+			name = "Ra'mia"
 			class = "pc_frozen"
 			size = 6
 			orbit_distance = 2.5
@@ -205,7 +205,7 @@ voidgate_system_initializer = {
 			has_ring = no
 		}
 		moon = {
-			name = "NAME_Ganymede"
+			name = "Ra'cora"
 			class = "pc_frozen"
 			size = 9
 			orbit_distance = 2.5
@@ -213,7 +213,7 @@ voidgate_system_initializer = {
 			has_ring = no
 		}
 		moon = {
-			name = "NAME_Callisto"
+			name = "Ra'calista"
 			class = "pc_frozen"
 			size = 7
 			orbit_distance = 2.5
@@ -223,7 +223,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Saturn"
+		name = "Whistoria"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 170
@@ -233,7 +233,7 @@ voidgate_system_initializer = {
 		change_orbit = 7
 
 		moon = {
-			name = "NAME_Titan"
+			name = "Watcher"
 			class = "pc_frozen"
 			size = 8
 			orbit_distance = 12
@@ -244,7 +244,9 @@ voidgate_system_initializer = {
                 		add_deposit = d_physics_2
             		}
 		}
-        	moon = {
+
+        moon = {
+
 			name = "Spectre"
 			class = "pc_molten"
 			size = 5
@@ -259,7 +261,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Uranus"
+		name = "Uranak"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 125
@@ -276,7 +278,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-        name = "NAME_Neptune"
+        name = "Oceanus"
         class = "pc_broken"
         orbit_distance = 25
         orbit_angle = -195
@@ -289,7 +291,7 @@ voidgate_system_initializer = {
             set_deposit = d_physics_5
 		}
         moon = {
-            name = "NAME_Triton"
+            name = "Posidia"
             class = "pc_shattered"
             size = 6
             orbit_distance = 7
@@ -304,7 +306,7 @@ voidgate_system_initializer = {
     }
 
 	planet = {
-		name = "Pluto"
+		name = "Gar-15"
 		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
@@ -313,7 +315,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_136472_Makemake"
+		name = "Mako-9"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -95
@@ -322,7 +324,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_136108_Haumea"
+		name = "Merat-12"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = 285
@@ -331,7 +333,7 @@ voidgate_system_initializer = {
 	}
 
 	planet = {
-		name = "NAME_20000_Varuna"
+		name = "Varun-8"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
@@ -341,52 +343,64 @@ voidgate_system_initializer = {
 
 
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
+		hyperlane_jumps = { min = 2 max = 2 }
+		NOR = { has_star_flag = horror_system
+			is_bottleneck_system = no}
+		initializer = "hostile_init_Horror"
 	}
-	neighbor_system = {
-	hyperlane_jumps = { min = 2 max = 2 }
-	initializer = "hostile_init_Horror"
-	}	
+	
+	
 }
 
 hostile_init_Horror = {
 	class = sc_black_hole
 	name = "Sensor Anomaly"
-
 	usage = misc_system_init
 	usage_odds = {
 		base = 0
 	}
-
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -403,18 +417,18 @@ hostile_init_Horror = {
 			}
 		}
 	}
-
+	flags = { horror_system }
 	init_effect = {
-		create_cloud_country = yes
-		event_target:cloud_country = {
+
+		create_horror_country = yes
 			create_fleet = {
 				name = "Violence"
 				settings = {
-					spawn_debris = yes
+					spawn_debris = no
 					is_boss = yes
 				}
 				effect = {
-					set_owner = event_target:cloud_country
+					set_owner = event_target:horror_country
 					create_ship = {
 						name = "NAME_Subspace_Rupture_Cloud_1"
 						design = "NAME_Dimensional_Horror"
