@@ -1,6 +1,7 @@
 ### Void Horror ###
 create_horror_country = {
 	optimize_memory
+	if = {limit = { NOT = { exists = event_target:horror_country } }
 		create_country = {
 			name = "The Foul Beyond"
 			type = void_horror
@@ -20,6 +21,10 @@ create_horror_country = {
 					    "null"
 				    }
 			    }
+				effect = {
+                save_global_event_target_as = horror_country
+                }
+			}
 			}
 		}
 }

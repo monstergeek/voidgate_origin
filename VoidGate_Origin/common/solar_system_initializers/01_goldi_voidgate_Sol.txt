@@ -392,6 +392,10 @@ hostile_init_Horror = {
 		create_horror_country = yes
 			create_fleet = {
 				name = "Violence"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+				}
 				effect = {
 					set_owner = event_target:horror_country
 					create_ship = {
