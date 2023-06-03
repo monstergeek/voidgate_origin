@@ -336,31 +336,31 @@ voidgate_system_initializer = {
 
 
 	neighbor_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	neighbor_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	spawn_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	spawn_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	spawn_system = {
-	distance = { min = 2 max = 2 }
+	hyperlane_jumps = { min = 2 max = 2 }
 	initializer = "hostile_init_Horror"
 	}
 	
@@ -371,18 +371,6 @@ hostile_init_Horror = {
 	name = "Do not Approach!"
 
 	usage = misc_system_init
-	usage_odds = {
-		base = 90000
-		modifier = {
-			factor = 0
-			has_star_flag = empire_cluster
-		}
-		modifier = {
-			factor = 0
-			is_bottleneck_system = yes
-		}
-	}
-
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -401,19 +389,7 @@ hostile_init_Horror = {
 	}
 
 	init_effect = {
-		create_cloud_country = yes
-		event_target:cloud_country = {
-			if = {
-				limit = {
-					NOT = {
-						has_modifier = cloud_power
-					}
-				}
-				add_modifier = {
-					modifier = cloud_power
-					days = -1
-				}
-			}
+		create_horror_country = yes
 			create_fleet = {
 				name = "Violence"
 				effect = {
