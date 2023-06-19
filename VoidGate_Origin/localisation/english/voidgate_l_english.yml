@@ -74,3 +74,6 @@
 
  monster_home_system_NAME:0 "The Talkers - VoidGate initiative"
  monster_home_system_DESC:0 "In this system, a ship from the VoidGate initiative was sent, an unusual one, since sign of potential civilisation were detected. They later learnt that, despite all sign pointing to an active civilization, all there was was ruins and wrecks, usable, but not what was planned"
+
+ custom_voidgate_fallback_NAME:0 "All Alone - VoidGate Initiative"
+ custom_voidgate_fallback_DESC:0 "One of many of the failed Human colonies"
