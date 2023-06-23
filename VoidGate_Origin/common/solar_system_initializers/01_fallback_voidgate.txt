@@ -15,14 +15,14 @@ custom_voidgate_fallback = {
 			set_star_flag = empire_cluster
 			every_neighbor_system = {
 				set_star_flag = empire_cluster
-			}
-			spawn_megastructure = {
+			}		
+		}
+		spawn_megastructure = {
 			type = gateway_ruined
 			name = "The Old Gate"
 			random_pos = no
 			orbit_angle = 180
 			}
-		}
 		generate_home_system_resources = yes
 	}
 	
